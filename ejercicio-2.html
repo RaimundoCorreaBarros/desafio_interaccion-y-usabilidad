@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+    <style>
+        body {
+            background-color: blueviolet;
+            font-weight: bold;
+            position: absolute;
+        }
+        .button {
+            position: relative;
+            background-color: rgb(47, 47, 48);
+            color: white;
+            padding: 3rem 5rem;
+            border: 0;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 30px;
+        }
+        @keyframes camina {
+            0% { left: 0; top: 0;}
+            100% { 
+                left: 3px; top: 0;
+                background-color: blueviolet;
+                border: 1px solid white;
+                box-shadow: -10px 8px rgba(47, 47, 47, 0.5);
+            }
+        }
+        .button:hover {
+            animation-name: camina;
+            animation-duration: .5s;
+        }
+
+    </style>
+<body>
+    <div class="button">
+        <a href="#">Conocer más</a>
+    </div>
+
+
+    
+</body>
+</html>
